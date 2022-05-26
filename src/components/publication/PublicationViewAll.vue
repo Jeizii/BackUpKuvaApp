@@ -1,6 +1,8 @@
 <script setup>
 
 import { ref } from 'vue';
+import PublicationCreate from './PublicationCreate.vue';
+import PublicationView from './PublicationView.vue';
 
 
 const publications = ref([])
@@ -19,10 +21,10 @@ getAllPublications()
 
 <template>
     <div class="container">
-        <div class="item" v-for="publication in publications">
+        <PublicationCreate></PublicationCreate>
 
-            {{ publication.title }}
-            <img :src="publication.url" />
+        <div class="item" v-for="publication in publications">
+            <PublicationView :publication="publication"></PublicationView>
         </div>
     </div>
 </template>
