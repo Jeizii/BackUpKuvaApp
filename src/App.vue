@@ -6,6 +6,13 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
+  
+<nav>
+
+<navigation-bar></navigation-bar>
+
+</nav>
+  
   <navigation-bar></navigation-bar>
   <router-view></router-view>
   <publication-view-all></publication-view-all>

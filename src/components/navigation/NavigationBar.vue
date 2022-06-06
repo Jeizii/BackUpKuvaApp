@@ -18,12 +18,14 @@ import {RouterLink} from 'vue-router'
 .nav {
     display: flex;
     justify-content: center;
-
+    background-color: #b45e5e;
 }
 a {
     margin: 20px;
-    font-size: 18px;
-
+    font-size: 24px;
+    float: left;
+    color: #0c0c0c;
+    text-align: center;
 }
 
 
